@@ -7,10 +7,14 @@ The starter project was created using [these steps](https://reactnative.dev/docs
 
 Implement the following features in the app using React Native and demo the app functionality using the ios simulator and the Android emulator. 
 
-Once you're finished record a screen capture of your demo for the features. We wont need voice or audio if that is a 
-particular challenge for you. You can use Quicktime "New screen recording" or any other video screen capture system.
+Once you're finished with the implementation then record a screen capture demo of the requirements. If you
+can, please walk us through your demo with a mic. You can use Quicktime "New screen recording" or any other 
+video screen capture system.
 
-Push your code to a public github repository and send us the link to it with the screen capture. 
+Deliverable: Email us the following:
+
+- Link to your code implementation on a public github repository
+- Video file for demo screen capture
 
 ## Steps to develop. 
 
