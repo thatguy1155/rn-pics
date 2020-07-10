@@ -1,5 +1,7 @@
 # Interview Project
 
+In this interview you'll build a dating profile screen and use Bill Gates' photos as example data for demo.
+
 This repository is a starting point for implementing an interview challenge. This should get you everything
 you need to just start working on react-native implementation. 
 
@@ -15,6 +17,9 @@ Deliverable: Email us the following:
 
 - Link to your code implementation on a public github repository
 - Video file for demo screen capture
+
+Be sure to leave 5-10 minutes at the end to record and send your screen capture and send the github link.
+Please record any progress you have made. That's okay if you dont finish both phases.
 
 ## Steps to develop. 
 
@@ -32,11 +37,12 @@ cd app
 yarn run ios
 ```
 
+# Phase 1
+
 ## Requirements:
 
-- Build a single screen for Viewing and Editing the Photos of a users profile.
-    - This must show the photo previews/thumbnails or the full scale photos
-    - Possible solutions could be a list of photos previews, a grid of photo previews, a scrolling list of photos. Pick a solution that works for you and would be relatively easy for a person to use.
+- Build a single screen for Viewing and Editing the Photos of a users profile. This should look like
+  Tinder's Edit your Profile screen, which includes thumbnails of each photo in a grid of 3 wide by 3 high.
 - Rearrange photos
     - The profile will show the photos in order. Give users a way to rearrange the order.
 - Remove photos
@@ -95,11 +101,13 @@ interface APIPostPhotosResponse {}
 interface APIDeletePhotosResponse {}
 ```
 
-### Phase 2
+# Phase 2
 
-Increment on your initial implementation to include the following type change. 
+Increment on your initial implementation to include the following changes. This will improve 
+the profile by having each photo specify where in the photo the center is located. Scale and 
+translate the photo as necessary to put the photos center in the middle of the display frame.
 
-Requirements
+## Requirements
 - Implement custom offset based on the center of each photo.
 - Photos should be scaled accordingly to still fit into the frame when offset to center. 
 
