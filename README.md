@@ -51,7 +51,8 @@ yarn run ios
     - Add a new photo.
     - You can hard code a URL of a photo from the internet in the event handling code or use the camera. Whatever works to get a new photo in the appropriate data format and display.
 - The above functionality should query a backend service. The service API is as defined below.
-    - This API can be simulated
+    - This API is simulated at http://localhost:3000. See the mock directory above. 
+    - Example data can be found with memberId 1. i.e. http://localhost:3000/member/1/photos
 
 ### API definition:
 
@@ -103,13 +104,13 @@ interface APIDeletePhotosResponse {}
 
 # Phase 2
 
-Increment on your initial implementation to include the following changes. This will improve 
+Iterate on your initial implementation to include the following changes. This will improve 
 the profile by having each photo specify where in the photo the center is located. Scale and 
-translate the photo as necessary to put the photos center in the middle of the display frame.
+translate the photo as necessary to put the photo's center in the middle of the display frame.
 
 ## Requirements
 - Implement custom offset based on the center of each photo.
-- Photos should be scaled accordingly to still fit into the frame when offset to center. 
+- Photos should be scaled accordingly to fill the frame when offset to center. 
 
 ```typescript
 interface APIPhoto {
