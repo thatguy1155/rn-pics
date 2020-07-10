@@ -1,6 +1,9 @@
-The starter project was created using [[these steps](https://reactnative.dev/docs/0.60/getting-started)]([https://reactnative.dev/docs/0.60/getting-started](https://reactnative.dev/docs/0.60/getting-started)). Note that I used the React-Native-CLI steps (not Expo). 
+# Interview Project
 
-If you have any troubles with tooling then start there.
+This repository is a starting point for implementing an interview challenge. This should get you everything
+you need to just start working on react-native implementation. 
+
+The starter project was created using [these steps](https://reactnative.dev/docs/0.60/getting-started). Note that I used the React-Native-CLI steps (not Expo). If you have any troubles with tooling then start there.
 
 Implement the following features in the app using React Native and demo the app functionality using the ios simulator and the Android emulator. 
 
@@ -22,7 +25,7 @@ yarn run ios
 
 ## Requirements:
 
-- Display an UX for Viewing and Editing the Photos for a users profile.
+- Build a single screen for Viewing and Editing the Photos of a users profile.
     - This must show the photo previews/thumbnails or the full scale photos
     - Possible solutions could be a list of photos previews, a grid of photo previews, a scrolling list of photos. Pick a solution that works for you and would be relatively easy for a person to use.
 - Rearrange photos
