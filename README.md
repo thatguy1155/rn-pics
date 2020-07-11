@@ -43,6 +43,7 @@ yarn run ios
 
 - Build a single screen for Viewing and Editing the Photos of a users profile. This should look like
   Tinder's Edit your Profile screen, which includes thumbnails of each photo in a grid of 3 wide by 3 high.
+  ![Example layout](tinder.png)
 - Rearrange photos
     - The profile will show the photos in order. Give users a way to rearrange the order.
 - Remove photos
