@@ -21,6 +21,13 @@ Deliverable: Email us the following:
 Be sure to leave 5-10 minutes at the end to record and send your screen capture and send the github link.
 Please record any progress you have made. That's okay if you dont finish both phases.
 
+## Tools 
+
+[yarn](https://classic.yarnpkg.com/en/docs/install)
+[nodejs](https://nodejs.org/en/download/)
+[xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+
+
 ## Steps to develop. 
 
 Shell 1
@@ -59,34 +66,39 @@ yarn run ios
 
 **GET /member/{memberId}/photos**
 
+`curl http://localhost:3000/member/1/photos`
+
 Request Parameters: <none>
 
 200 response: 
 
 ```typescript
 interface APIGetPhotosResponse {
-    id: string,
-    memberId: string,
-    photos: APIPhoto[],
+    id: string;
+    memberId: string;
+    photos: APIPhoto[];
 };
 
 interface APIPhoto {
-    id: string,
-    url: string,
-    width: number,
-    height: number,
+    id: string;
+    url: string;
+    width: number;
+    height: number;
 }
 ```
 
+
 **POST /member/{memberId}/photos**
+
+`curl -X POST http://localhost:3000/member/1/photos -d '{"id":"2","memberId":"2","photos":[{"id":"1","url":"http://somedomain.com/123","width":"150","height":"250"}]}'`
 
 Request Parameters:
 
 ```typescript
 interface APIPostPhotosRequest {
-    id: string,
-    memberId: string,
-    photos: APIPhoto[], 
+    id: string;
+    memberId: string;
+    photos: APIPhoto[]; 
 }
 ```
 
@@ -97,6 +109,9 @@ interface APIPostPhotosResponse {}
 ```
 
 **DELETE /member/{memberId}/photos**
+
+`curl -X DELETE http://localhost:3000/member/1/photos`
+
 200 response type:
 
 ```typescript
@@ -115,11 +130,11 @@ translate the photo as necessary to put the photo's center in the middle of the 
 
 ```typescript
 interface APIPhoto {
-    id: string,
-    url: string,
-    width: number,
-    height: number,
-    centerX: number,
-    centerY: number,
+    id: string;
+    url: string;
+    width: number;
+    height: number;
+    centerX: number;
+    centerY: number;
 }
 ```
