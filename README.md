@@ -13,7 +13,7 @@ Once you're finished with the implementation then record a screen capture demo o
 can, please walk us through your demo with a mic. You can use Quicktime "New screen recording" or any other 
 video screen capture system.
 
-Deliverable: Email us the following:
+Deliverable: Email us the following (please do not open a pull request):
 
 - Link to your code implementation on a public github repository
 - Video file for demo screen capture
