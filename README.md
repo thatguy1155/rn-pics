@@ -63,7 +63,6 @@ yarn run ios
 
 Build a single screen for Viewing and Editing the Photos of a users profile. This should look like
 Tinder's Edit your Profile screen, which includes thumbnails of each photo in a grid of 3 wide by 3 high.
-![Example layout](tinder.png)
 
 -   Add new photo
     -   Add a new photo.
@@ -75,6 +74,8 @@ Tinder's Edit your Profile screen, which includes thumbnails of each photo in a 
 -   The above functionality should query a backend service. The service API is as defined below.
     -   This API is simulated at http://localhost:3000. See the mock directory above.
     -   Example data can be found with memberId 1. i.e. http://localhost:3000/member/1/photos
+
+![Example layout](tinder.png =500)
 
 #### API Response Types
 
