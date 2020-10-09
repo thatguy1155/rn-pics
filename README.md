@@ -3,29 +3,37 @@
 In this interview you'll build a dating profile screen and use Bill Gates' photos as example data for demo.
 
 This repository is a starting point for implementing an interview challenge. This should get you everything
-you need to just start working on react-native implementation.
+you need to just start working on a react-native implementation.
 
-The starter project was created using [these steps](https://reactnative.dev/docs/0.60/getting-started). Note that I used the React-Native-CLI steps (not Expo). If you have any troubles with tooling then start there.
+The starter project was created using [these steps](https://reactnative.dev/docs/0.60/getting-started). Note that React-Native-CLI was used and not Expo. If you have any troubles with tooling then start there.
 
 Implement the following features in the app using React Native and demo the app functionality using the ios simulator and the Android emulator.
 
-Once you're finished with the implementation then record a screen capture demo of the requirements. If you
+Once you're finished with the implementation, record a screen capture demo of the requirements. If you
 can, please walk us through your demo with a mic. You can use Quicktime "New screen recording" or any other
-video screen capture system.
+video screen capture system or [Loom](https://www.loom.com/).
 
 Deliverable: Email us the following (please do not open a pull request):
 
 -   Link to your code implementation on a public github repository
 -   Video file for demo screen capture
 
-Be sure to leave 5-10 minutes at the end to record and send your screen capture and send the github link.
-Please record any progress you have made. That's okay if you dont finish both phases.
+Be sure to leave 5-10 minutes at the end to record and send your screen capture and send the Github link.
+Please record any progress you have made. It's okay if you don't finish both phases.
 
-## Tools
+## Tools & Dependencies
 
 [yarn](https://classic.yarnpkg.com/en/docs/install)
 [nodejs](https://nodejs.org/en/download/)
 [xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+
+You may need to install the following dependencies, as described on https://reactnative.dev/docs/0.60/getting-started
+
+```sh
+brew install node
+brew install watchman
+sudo gem install cocoapods
+```
 
 ## Steps to develop.
 
@@ -38,7 +46,7 @@ yarn run mock
 # Server will now be running at http://localhost:3000
 ```
 
-_Note_: Any data saved to the mock server will be saved to mock/api/db.json .
+_Note_: Any data saved to the mock server will be saved to _mock/api/db.json_.
 
 Shell 2 - you can run the iOS simulator and develop your app here
 
