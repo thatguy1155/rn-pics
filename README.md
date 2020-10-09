@@ -35,7 +35,7 @@ brew install watchman
 sudo gem install cocoapods
 ```
 
-## Steps to develop.
+## Steps to Get Started.
 
 Shell 1 - Starting your mock API server
 
@@ -57,9 +57,11 @@ npx pod-install
 yarn run ios
 ```
 
-# Phase 1
+## What We
 
-## Requirements:
+### Phase 1
+
+#### Requirements
 
 -   Build a single screen for Viewing and Editing the Photos of a users profile. This should look like
     Tinder's Edit your Profile screen, which includes thumbnails of each photo in a grid of 3 wide by 3 high.
@@ -75,7 +77,7 @@ yarn run ios
     -   This API is simulated at http://localhost:3000. See the mock directory above.
     -   Example data can be found with memberId 1. i.e. http://localhost:3000/member/1/photos
 
-### API Response Types
+#### API Response Types
 
 ```typescript
 interface APIMember {
@@ -100,7 +102,7 @@ interface APIPhoto = APIPhotoBase & {
 }
 ```
 
-### API definition:
+#### API definition:
 
 **GET /member/{memberId}/photos**
 
@@ -156,13 +158,13 @@ interface APIDeletePhotosResponse {}
 
 If needed, additional documentation can be found at https://github.com/typicode/json-server
 
-# Phase 2
+### Phase 2
 
 Iterate on your initial implementation to include the following changes. This will improve
 the profile by having each photo specify where in the photo the center is located. Scale and
 translate the photo as necessary to put the photo's center in the middle of the display frame.
 
-## Requirements
+#### Requirements
 
 -   Implement custom offset based on the center of each photo (denoted by `centerX` and `centerY` in the `APIPhoto` type).
 -   Photos should be scaled accordingly to fill the frame when offset to center.
