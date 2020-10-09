@@ -75,7 +75,7 @@ Tinder's Edit your Profile screen, which includes thumbnails of each photo in a 
     -   This API is simulated at http://localhost:3000. See the mock directory above.
     -   Example data can be found with memberId 1. i.e. http://localhost:3000/member/1/photos
 
-![Example layout](tinder.png =500)
+<img src="tinder.png" alt="Example Layout" width="500"/>
 
 #### API Response Types
 
