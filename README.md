@@ -106,7 +106,9 @@ interface APIPhoto = APIPhotoBase & {
 
 **GET /member/{memberId}/photos**
 
-`curl http://localhost:3000/member/1/photos`
+```
+curl http://localhost:3000/member/1/photos
+```
 
 200 response:
 
@@ -116,7 +118,9 @@ interface APIGetPhotosResponse = APIPhoto[];
 
 **POST /member/{memberId}/photos**
 
-`curl -H "Content-Type: application/json" -X POST http://localhost:3000/member/2/photos -d '{"url":"https://miro.medium.com/max/2000/1*KvhM-ArA5RkpYLi7L_Qtdw.jpeg","position": 1, "width": 2000,"height": 1000, "centerX": 1000, "centerY": 500}'`
+```sh
+curl -H "Content-Type: application/json" -X POST http://localhost:3000/member/2/photos -d '{"url":"https://miro.medium.com/max/2000/1*KvhM-ArA5RkpYLi7L_Qtdw.jpeg","position": 1, "width": 2000,"height": 1000, "centerX": 1000, "centerY": 500}'
+```
 
 Request Parameters:
 
@@ -132,7 +136,9 @@ interface APIAddMemberPhotoResponse = APIPhoto
 
 **PUT /photos/{id}**
 
-`curl -H "Content-Type: application/json" -X PUT http://localhost:3000/photos/dK4-OYy -d '{"url":"https://miro.medium.com/max/2000/1*KvhM-ArA5RkpYLi7L_Qtdw.jpeg","position": 2, "width": 2000,"height": 1000, "centerX": 1000, "centerY": 500}'`
+```sh
+curl -H "Content-Type: application/json" -X PUT http://localhost:3000/photos/dK4-OYy -d '{"url":"https://miro.medium.com/max/2000/1*KvhM-ArA5RkpYLi7L_Qtdw.jpeg","position": 2, "width": 2000,"height": 1000, "centerX": 1000, "centerY": 500}'
+```
 
 Request Parameters:
 
@@ -148,7 +154,9 @@ interface APIUpdateMemberPhotoResponse = APIPhoto
 
 **DELETE /photos/{id}**
 
-`curl -X DELETE http://localhost:3000/photos/dK4-OYy`
+```sh
+curl -X DELETE http://localhost:3000/photos/dK4-OYy
+```
 
 200 response type:
 
